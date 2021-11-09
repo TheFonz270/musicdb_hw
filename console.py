@@ -22,3 +22,11 @@ album3 = Album('Life on Mars', 'Bowie', artist3)
 album_repository.save(album1)
 album_repository.save(album2)
 album_repository.save(album3)
+
+album2.title = "Smoke and Mirrors"
+
+album_repository.update(album2)
+
+# album_list = album_repository.select_all()
+# for album in album_list:
+#     print(album.__dict__)
